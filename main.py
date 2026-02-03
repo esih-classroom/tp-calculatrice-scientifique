@@ -1,11 +1,8 @@
-
-nombre1 = input("Entrer le premier nombre: ")
-nombre2 = input("Entre le second nombre: ")
-
-print(f"La somme est: {nombre1 + nombre2}")
-
 def main():
-    print("Hello from calculatrice-scientifique!")
+    nombre1 = int(input("Entrer le premier nombre: "))
+    nombre2 = int(input("Entre le second nombre: "))
+
+    print(f"La somme est: {nombre1 + nombre2}")
 
 
 if __name__ == "__main__":
