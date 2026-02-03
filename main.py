@@ -1,6 +1,6 @@
 def main():
-    nombre1 = int(input("Entrer le premier nombre: "))
-    nombre2 = int(input("Entre le second nombre: "))
+    nombre1 = float(input("Entrer le premier nombre: "))
+    nombre2 = float(input("Entre le second nombre: "))
 
     print(f"La somme est: {nombre1 + nombre2}")
 
