@@ -47,6 +47,9 @@ def main():
         elif option == 3:
             resultat = nombre1 * nombre2
         elif option == 4:
+            while nombre2 == 0:
+                print("On ne peut pas diviser par 0")
+                nombre2 = input_number("Entrer le second nombre : ")
             resultat = nombre1 / nombre2
         else:
             # exit()
