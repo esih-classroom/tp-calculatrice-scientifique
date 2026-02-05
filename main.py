@@ -1,17 +1,15 @@
-def input_number(message: str) -> float:
-    saisie_in_correct = True
+# import function
+# from function import input_number
+from package.function import input_number
 
-    while saisie_in_correct:
-        try:
-            nombre = float(input(message))
-            saisie_in_correct = False
-        except ValueError:
-            print("Saisie Incorrect ! Veuillez utiliser un nombre.")
+from ipyllogger import Logger
+from ipyllogger import level
 
-    return nombre
-
+logger = Logger()
 
 def main():
+
+    logger.log("Session start", level=level.WARNING)
 
     continuer = True
 
@@ -28,6 +26,7 @@ def main():
         option = input_number(">>> ")
 
         if option == 0:
+            logger.log("Session ends", level=level.WARNING)
             exit()
 
         if option not in [1, 2, 3, 4]:
@@ -53,6 +52,7 @@ def main():
             resultat = nombre1 / nombre2
         else:
             # exit()
+            logger.log("Session ends", level=level.WARNING)
             return
 
         print(f"Le resultat est: {resultat}")
@@ -62,6 +62,7 @@ def main():
         if choix == 'o' or choix == 'O':
             continuer = True
         else:
+            logger.log("Session ends", level=level.WARNING)
             continuer = False
 
 if __name__ == "__main__":
